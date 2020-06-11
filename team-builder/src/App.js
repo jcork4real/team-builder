@@ -1,10 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState}  from 'react';
 import './App.css';
+
+import Form from './Form';
+import Team from './Team';
 
 // Step 1 : Set Up State
 // Import the useState hook 
-import React, {useState} from  'react';
 
 
 function App() {
@@ -18,25 +19,39 @@ function App() {
     {
      id: 0,
      name: 'Jcork 4real',
-   
+     email: 'jcork4real@gmail.com',
+     role: 'cool guy'
     },
     {
      id: 1,
      name: 'Stork James',
-     
+     email: 'storkjames@gmail.com',
+     role: 'cool guy'
     },
     {
      id: 2,
      name: 'Hunter Hurst Helmsley',
-  
+     email: 'tripleh@gmail.com',
+     role: 'cool guy'
     }
   ])
+
+  // *
+  const addTeamMate = el => {
+    setTeamMembers([...teamMembers, {...el}])
+  }
 
   return (
     <div className="App">
       {/* Render your list of team members. */}
+      <header className="App-header">
+        <h1>Team List</h1>
+        <Form addTeamMate = {addTeamMate}/>
+        <Team members={teamMembers}/>
+      </header>
     </div>
   );
 }
 
-export default App;
+
+export default  App;
