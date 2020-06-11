@@ -17,18 +17,18 @@ const Form = props => {
 
     return (
 
-        <form onSubmit={submitForm} className= 'form'>
-           <label htmlFor = 'name'>
+        <form onSubmit={submitForm}>
+           <label>
                 New Member Name:
                 <input  id='name' type='text' placeholder='Member Name' onChange={handleChanges} value={member.name} name= 'name'/>
            </label>
 
-           <label className= 'label' htmlFor='email'>
+           <label>
               New Member Email: 
                <input id='email' type='text' placeholder='Member Email' onChange={handleChanges} value={member.email} name='email'/>
            </label>
 
-           <label htmlFor='role'>
+           <label>
               New Member  Role:
                <input id='role' type='text' placeholder='Member Role' onChange={handleChanges} value={member.role} name='role'/>
            </label>
