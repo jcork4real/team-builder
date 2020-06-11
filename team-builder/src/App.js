@@ -44,11 +44,9 @@ function App() {
   return (
     <div className="App">
       {/* Render your list of team members. */}
-      <header className="App-header">
-        <h1>Team List</h1>
+        <h1>The Team List</h1>
         <Form addTeamMate = {addTeamMate}/>
         <Team members={teamMembers}/>
-      </header>
     </div>
   );
 }
