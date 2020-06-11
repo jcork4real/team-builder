@@ -3,15 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 // Step 1 : Set Up State
-// Import the useState hook and set up state to keep your team members list.
-
+// Import the useState hook 
 import React, {useState} from  'react';
 
 
 function App() {
 
-  // Step 1 : Set Up State
-// Import the useState hook and set up state to keep your team members list.
+  // Step 1 : Set Up State cont'd
+  //set up state to keep your team members list.
 
   const [teamMembers, setTeamMembers] = useState([
     // Give the state variable you just declared a default value. You will need to keep track of a 
