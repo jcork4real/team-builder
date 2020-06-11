@@ -5,11 +5,11 @@ import './App.css'
 const Team = props => {
     return(
       <div>
-        {props.members.map(member => (
+        {props.members.map(teamMemberEl => (
           <div>
-            <h2>{member.name}</h2>
-            <p>{member.email}</p>
-            <p>{member.role}</p>
+            <h3>{teamMemberEl.name}</h3>
+            <p>{teamMemberEl.email}</p>
+            <p>{teamMemberEl.role}</p>
           </div>
         ))}
       </div>
