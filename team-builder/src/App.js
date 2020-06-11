@@ -18,17 +18,17 @@ function App() {
     {
      id: 0,
      name: 'Jcork 4real',
-     role: 'Ultimate Cool Guy'
+   
     },
     {
      id: 1,
      name: 'Stork James',
-     role: 'Semi Ultimate Cool Guy'
+     
     },
     {
      id: 2,
      name: 'Hunter Hurst Helmsley',
-     role: 'Average Cool Guy'
+  
     }
   ])
 
